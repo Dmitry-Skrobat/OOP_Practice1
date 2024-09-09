@@ -1,9 +1,11 @@
-package Numbers;
-
 import java.util.Scanner;
 
 public class Number {
     private double value;
+
+    public Number() {
+        this.value = 0;
+    }
 
     public Number(double value) {
         this.value = value;
@@ -12,6 +14,7 @@ public class Number {
     public double getValue() {
         return value;
     }
+
 
     public Number NumberSum(Number value1,Number value2){
         return new Number(value1.getValue() + value2.getValue());
@@ -22,8 +25,8 @@ public class Number {
     public Number NumberDif(Number value1,Number value2){
         return new Number(value1.getValue() - value2.getValue());
     }
-    public Number NumberPow(Number value1,int value2){
-        return new Number(Math.pow(value1.getValue(),value2));
+    public Number NumberSquare(Number value1){
+        return new Number(Math.pow(value1.getValue(),2));
     }
     public Number NumberSqrt(Number value1){return new Number (Math.sqrt(value1.getValue()));}
     public Number scannerNumber(){

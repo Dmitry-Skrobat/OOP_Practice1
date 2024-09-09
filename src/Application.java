@@ -7,7 +7,6 @@ public class Application {
         this.array = new Array();
     }
 
-
     public void showMenu(){
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
@@ -28,7 +27,12 @@ public class Application {
 
             switch (choice) {
                 case 1:
-                    array.input();
+                    System.out.println();
+                    System.out.println("1. Ввести новый массив");
+                    System.out.println("2. Добавить новые элементы в старый массив");
+                    System.out.print("Выберите команду: ");
+                    choice = scanner.nextInt();
+                    array.input(choice);
                     break;
                 case 2:
                     array.calculateMeanAndStandardDeviation();
@@ -40,11 +44,15 @@ public class Application {
                     array.sortDescending();
                     break;
                 case 5:
-                    System.out.println("Введите новую длину массива: ");
+                    System.out.print("Введите новую длину массива: ");
                     int newSize = scanner.nextInt();
                     array.resize(newSize);
                     break;
                 case 6:
+                    System.out.print("Введите индекс: ");
+                    int index = scanner.nextInt();
+                    array.getElementByIndex(index);
+                    break;
 
                 case 7:
                     array.showArray();
