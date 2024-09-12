@@ -4,10 +4,10 @@ public class Array {
     private int capacity;
 
     public Array(){
-        this.size = 10;
-        this.capacity = 10;
-        this.elements = new Number[size];
-        for(int i = 0; i<10;i++){
+        this.size = 5;
+        this.capacity = 5;
+        this.elements = new Number[capacity];
+        for(int i = 0; i<size;i++){
             elements[i] = new Number(Math.round(Math.random()*10000.0)/100.0);
         }
     }
