@@ -16,19 +16,19 @@ public class Number {
     }
 
 
-    public Number NumberSum(Number value1,Number value2){
+    public Number numberSum(Number value1,Number value2){
         return new Number(value1.getValue() + value2.getValue());
     }
-    public Number NumberDiv(Number value1,int value2){
+    public Number numberDiv(Number value1,int value2){
         return new Number(value1.getValue() / value2);
     }
-    public Number NumberDif(Number value1,Number value2){
+    public Number numberDif(Number value1,Number value2){
         return new Number(value1.getValue() - value2.getValue());
     }
-    public Number NumberSquare(Number value1){
+    public Number numberSquare(Number value1){
         return new Number(Math.pow(value1.getValue(),2));
     }
-    public Number NumberSqrt(Number value1){return new Number (Math.sqrt(value1.getValue()));}
+    public Number numberSqrt(Number value1){return new Number (Math.sqrt(value1.getValue()));}
     public Number scannerNumber(){
         Scanner scanner = new Scanner(System.in);
         double num = scanner.nextDouble();

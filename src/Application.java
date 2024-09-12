@@ -51,7 +51,7 @@ public class Application {
                 case 6:
                     System.out.print("Введите индекс: ");
                     int index = scanner.nextInt();
-                    array.getElementByIndex(index);
+                    array.elementReplacement(index);
                     break;
 
                 case 7:
