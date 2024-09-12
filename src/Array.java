@@ -8,7 +8,7 @@ public class Array {
         this.capacity = 10;
         this.elements = new Number[size];
         for(int i = 0; i<10;i++){
-            elements[i] = new Number(Math.round(Math.random()*10));
+            elements[i] = new Number(Math.round(Math.random()*10000.0)/100.0);
         }
     }
 
