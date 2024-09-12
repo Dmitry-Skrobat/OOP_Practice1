@@ -55,7 +55,7 @@ public class Array {
         System.out.println();
     }
 
-    public void calculateMeanAndStandardDeviation(){
+    public void calculate(){
         int numberOfValues = elements.length;
         if(numberOfValues==0){
             System.out.println("The array is empty");

@@ -35,7 +35,7 @@ public class Application {
                     array.input(choice);
                     break;
                 case 2:
-                    array.calculateMeanAndStandardDeviation();
+                    array.calculate();
                     break;
                 case 3:
                     array.sortAscending();
